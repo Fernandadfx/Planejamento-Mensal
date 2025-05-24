@@ -1,0 +1,89 @@
+ /* Define a fonte Inter para todo o documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Cor de fundo suave */
+        }
+        /* Estilo para a faixa superior - agora clicável */
+        .top-banner {
+            background-color: #bfdbfe; /* Azul claro */
+            color: #1e40af; /* Azul escuro para o texto */
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 0.75rem; /* Cantos arredondados */
+            margin-bottom: 2rem; /* Espaçamento abaixo da faixa */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer; /* Indica que é clicável */
+            transition: background-color 0.2s ease-in-out; /* Transição suave ao passar o mouse */
+        }
+        .top-banner:hover {
+            background-color: #93c5fd; /* Azul um pouco mais escuro ao passar o mouse */
+        }
+        /* Estilo para as áreas de texto editáveis */
+        .editable-text {
+            min-height: 2rem; /* Altura mínima para as células */
+            outline: none; /* Remove o contorno ao focar */
+            padding: 0.5rem; /* Preenchimento interno */
+            overflow-wrap: break-word; /* Quebra de linha para palavras longas */
+        }
+        /* Estilo para o cabeçalho do calendário */
+        .calendar-header {
+            background-color: #e0f2fe; /* Cor de fundo para o cabeçalho */
+            color: #1e40af; /* Cor do texto */
+            font-weight: bold;
+            padding: 0.75rem 0;
+            text-align: center;
+            border-radius: 0.5rem; /* Cantos arredondados */
+        }
+        /* Estilo para as células do calendário */
+        .calendar-cell {
+            background-color: #ffffff; /* Cor de fundo das células */
+            border: 1px solid #e2e8f0; /* Borda suave */
+            border-radius: 0.5rem; /* Cantos arredondados */
+            min-height: 8rem; /* Altura mínima para cada dia */
+            padding: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        /* Estilo para o número do dia */
+        .day-number {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+            font-size: 0.875rem; /* Tamanho da fonte */
+            color: #6b7280; /* Cor do texto */
+            font-weight: bold;
+        }
+        /* Estilo para as seções de anotações e metas */
+        .notes-section {
+            background-color: #bfdbfe; /* Azul claro */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .goals-section {
+            background-color: #fecaca; /* Rosa claro */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .observation-section {
+            background-color: #fecaca; /* Rosa claro */
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilo para células de feriado */
+        .holiday-cell {
+            background-color: #fee2e2; /* Fundo vermelho claro para feriados */
+            border-color: #ef4444; /* Borda vermelha */
+        }
+        .holiday-name {
+            font-size: 0.75rem; /* Tamanho da fonte menor para o nome do feriado */
+            color: #dc2626; /* Cor do texto vermelho */
+            font-weight: bold;
+            margin-top: 0.25rem;
+            text-align: center;
+        }
